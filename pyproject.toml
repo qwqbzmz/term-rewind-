@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "term-rewind"
+version = "0.1.0"
+description = "Command-scoped filesystem snapshots and selective undo for your terminal and AI coding agents."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+keywords = ["cli", "terminal", "undo", "rewind", "snapshot", "ai-agent", "developer-tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+rewind = "rewind:main"
+term-rewind = "rewind:main"
+
+[tool.setuptools]
+py-modules = ["rewind", "timeline", "mcp_server"]

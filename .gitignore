@@ -1,0 +1,20 @@
+# Python / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+
+# Bundled Windows portable runtime & local binaries (publish via GitHub Releases)
+runtime/
+demo-data/
+*.exe
+*.lnk
+
+# Local snapshots & OS files
+.rewind/
+.DS_Store
+Thumbs.db
